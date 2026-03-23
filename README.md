@@ -3,9 +3,51 @@ MYD-C7Z020 experience
 
 ---
 
+
+
 # PetaLinux 2024.2 Build Guide for MYIR MYD-C7Z020
 
 This guide documents the setup and build process for the MYIR XC7Z020 board. It includes specific fixes for **Ubuntu 24.x** environments and common resource-related build failures.
+
+## My Environment
+
+### 1. The board - MYD-C7Z010/20-V2 Dev. Board, Artikel MYD-C7Z020-V2-4E1D-766-I
+
+<img width="709" height="1261" alt="image" src="https://github.com/user-attachments/assets/83d507e6-87a4-4031-90fb-e7e2763e9e9b" />
+
+Initial connectied via MYIR serial2USB cabel to Host-PC.
+
+for finding connected serial port (used for console I/O) use **<U> usbipd </U>** command. With usbipd show you list all USB divices:
+
+``` cmd
+
+C:\Windows\System32>usbipd list
+Connected:
+BUSID  VID:PID    DEVICE                                                        STATE
+1-8    04e8:4002  Per USB angeschlossenes SCSI (UAS)-Massenspeichergerät        Not shared
+2-2    8087:0029  Intel(R) Wireless Bluetooth(R)                                Not shared
+4-4    05e3:0749  USB-Massenspeichergerät                                       Shared
+6-3    046d:c52b  Logitech USB Input Device, USB-Eingabegerät                   Not shared
+8-1    04e8:4001  Per USB angeschlossenes SCSI (UAS)-Massenspeichergerät        Not shared
+8-2    0bc2:331a  Per USB angeschlossenes SCSI (UAS)-Massenspeichergerät        Not shared
+8-3    0bc2:331a  Per USB angeschlossenes SCSI (UAS)-Massenspeichergerät        Not shared
+8-4    0bc2:2038  Per USB angeschlossenes SCSI (UAS)-Massenspeichergerät        Not shared
+10-4   04e8:6860  A52 von Gerhard, SAMSUNG Mobile USB Modem, SAMSUNG Androi...  Not shared
+12-3   067b:2303  Prolific USB-to-Serial Comm Port (COM10)                      Shared
+14-1   2b7e:c569  NexiGo HelloCam N930W Camera, NexiGo HelloCam N930W IR Ca...  Not shared
+14-3   2b7e:a569  NexiGo HelloCam N930W Audio, USB-Eingabegerät                 Not shared
+15-1   04f3:0c3d  ELAN WBF Fingerprint Sensor                                   Not shared
+
+Persisted:
+GUID                                  DEVICE
+bbba9b06-911c-4d21-ac12-916c1c9056b2  Serielles USB-Gerät (COM9), Serielles USB-Gerät (COM8), B...
+f91bc313-54db-4470-8338-96b851aff57f  Dual RS232-HS, USB Serial Converter B
+
+
+C:\Windows\System32>
+
+```
+
 
 ## 🛠 System Preparation (Ubuntu 24.04/24.02)
 
