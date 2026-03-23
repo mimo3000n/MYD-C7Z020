@@ -1,6 +1,12 @@
 
 ---
 
+Digilent JTAG-HS3 pin layout:
+
+<img width="1228" height="543" alt="image" src="https://github.com/user-attachments/assets/a7c2f55b-362e-4c5b-a022-71d040a51b9f" />
+
+
+
 # 🚀 JTAG Debugging & Programming Guide
 
 This document covers the advanced setup for the **Digilent JTAG-HS3** cable to program the FPGA bitstream and debug the Linux Kernel on the **MYD-C7Z020**.
