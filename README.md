@@ -83,7 +83,9 @@ now i switched board via main switch on. Near FCM connector at left side red LED
 
 <img width="712" height="1059" alt="image" src="https://github.com/user-attachments/assets/4f7d69d3-1420-4b05-a6ad-aaa8da38132d" />
 
+
 on putty (console output) i see initial boot process:
+
 
 ``` txt
 U-Boot 2020.01 (Sep 26 2022 - 01:59:45 +0000)
