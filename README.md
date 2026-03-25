@@ -17,7 +17,7 @@ This guide documents the setup and build process for the MYIR XC7Z020 board. It 
 
 Initial connectied via MYIR serial2USB cabel to Host-PC.
 
-for finding connected serial port (used for console I/O) use **<U> usbipd </U>** command. With usbipd show you list all USB divices:
+for finding connected serial port (used for console I/O) i use **usbipd** command. With usbipd show you list all USB divices:
 
 ``` cmd
 
