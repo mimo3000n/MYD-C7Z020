@@ -598,6 +598,62 @@ saveenv
 
 ---
 
+### **5. Manual Boot**
+
+to boot from SPI
+
+```bash
+
+Zynq> run qspiboot
+SF: Detected n25q256a with page size 256 Bytes, erase size 4 KiB, total 32 MiB
+device 0 offset 0x520000, size 0xa00000
+SF: 10485760 bytes @ 0x520000 Read: OK
+## Loading kernel from FIT Image at 10000000 ...
+   Using 'conf@system-top.dtb' configuration
+   Verifying Hash Integrity ... OK
+   Trying 'kernel@1' kernel subimage
+     Description:  Linux kernel
+     Type:         Kernel Image
+     Compression:  uncompressed
+     Data Start:   0x100000f8
+     Data Size:    4452016 Bytes = 4.2 MiB
+     Architecture: ARM
+     OS:           Linux
+     Load Address: 0x00200000
+     Entry Point:  0x00200000
+     Hash algo:    sha256
+     Hash value:   d242df307fa2c82501fd079630f9eb225c75f9cea706cc8755ac65d339aa3553
+   Verifying Hash Integrity ... sha256+ OK
+## Loading fdt from FIT Image at 10000000 ...
+   Using 'conf@system-top.dtb' configuration
+   Verifying Hash Integrity ... OK
+   Trying 'fdt@system-top.dtb' fdt subimage
+     Description:  Flattened Device Tree blob
+     Type:         Flat Device Tree
+     Compression:  uncompressed
+     Data Start:   0x1043f0b4
+     Data Size:    20486 Bytes = 20 KiB
+     Architecture: ARM
+     Hash algo:    sha256
+     Hash value:   2f1a1b836ddd16034a33e32c2100e6224fc22848bfdc5b2763b07748cba6c5fd
+   Verifying Hash Integrity ... sha256+ OK
+   Booting using the fdt blob at 0x1043f0b4
+   Loading Kernel Image
+   Loading Device Tree to 07ff7000, end 07fff005 ... OK
+
+Starting kernel ...
+
+Booting Linux on physical CPU 0x0
+Linux version 5.4.0-xilinx-v2020.1 (oe-user@oe-host) (gcc version 9.2.0 (GCC)) #1 SMP PREEMPT Mon Sep 19 02:48:52 UTC 2022
+CPU: ARMv7 Processor [413fc090] revision 0 (ARMv7), cr=18c5387d
+CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+OF: fdt: Machine model: xlnx,zynq-7000
+printk: bootconsole [earlycon0] enabled
+Memory policy: Data cache writealloc
+cma: Reserved 32 MiB at 0x3e000000
+..........
+```
+
 ### **Summary Table of Commands**
 
 | Task | Command |
