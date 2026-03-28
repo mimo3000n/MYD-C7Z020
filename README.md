@@ -854,8 +854,5 @@ sync
 ---
 </details>
 
-<details>
-<summary>Click to expand: MYIR Board U-Boot Autoboot Deactivation Guide</summary
 
-
-</details>
+# Click to expand: JTAG Setup and Configuration Giuide ( https://github.com/mimo3000n/MYD-C7Z020/blob/main/JTAG.md)
