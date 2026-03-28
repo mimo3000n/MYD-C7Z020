@@ -855,4 +855,4 @@ sync
 </details>
 
 
-# Click to expand: JTAG Setup and Configuration Giuide ( https://github.com/mimo3000n/MYD-C7Z020/blob/main/JTAG.md)
+## Click to expand: JTAG Setup and Configuration Giuide(https://github.com/mimo3000n/MYD-C7Z020/blob/main/JTAG.md)
