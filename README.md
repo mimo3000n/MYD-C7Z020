@@ -723,11 +723,21 @@ Run `petalinux-config` -> **Yocto Settings** -> **Parallel sourcing/building** a
 
 **Fix B: Increase Swap Space (Recommended 16GB+)**
 ```bash
-sudo fallocate -l 16G /swapfile_plnx
-sudo chmod 600 /swapfile_plnx
-sudo mkswap /swapfile_plnx
-sudo swapon /swapfile_plnx
+sudo fallocate -l 32G /swapfile_petalinux
+sudo chmod 600 /swapfile_petalinux
+sudo mkswap /swapfile_petalinux
+sudo swapon /swapfile_petalinux
 ```
+
+add to /etc/fstab
+
+```bash
+mimo3000n@KLG-PC001:~$ more /etc/fstab
+# UNCONFIGURED FSTAB FOR BASE SYSTEM
+/swapfile_petalinux none swap sw 0 0
+mimo3000n@KLG-PC001:~$
+```
+
 
 ---
 
@@ -771,9 +781,50 @@ petalinux-build
 * **Partition 1 (FAT32, ~500MB):** Label as `BOOT`
 * **Partition 2 (EXT4, Remaining):** Label as `rootfs`
 
+### create mountpoints
+sudo mkdir /mnt/sd_boot /mnt/sd_rootfs
+
+### mount both partition of SD Card
+
+check if partitions are there with **lsblk**
+
+```bash
+
+
 ### Copying Files
 ```bash
 # To Partition 1 (BOOT)
+cd /home/mimo3000n/petalinux/2024.2/MYD-C7Z020/images/linux
+
+mimo3000n@KLG-PC001:~/petalinux/2024.2/MYD-C7Z020/images/linux$ ls -l
+total 2339988
+-rw-r--r-- 1 mimo3000n mimo3000n   5216172 Mar 27 20:28 BOOT.BIN
+-rw-r--r-- 1 mimo3000n mimo3000n      3830 Mar 19 17:23 boot.scr
+-rw-r--r-- 1 mimo3000n mimo3000n       327 Mar 27 20:28 bootgen.bif
+-rw-r--r-- 1 mimo3000n mimo3000n      7602 Mar 27 17:09 config
+-rw-r--r-- 1 mimo3000n mimo3000n   5157735 Mar 26 13:51 image.ub
+drwxr-xr-x 2 mimo3000n mimo3000n      4096 Mar 19 17:23 pxelinux.cfg
+-rw-r--r-- 1 mimo3000n mimo3000n 674348544 Mar 27 17:31 rootfs.cpio
+-rw-r--r-- 1 mimo3000n mimo3000n 234519742 Mar 27 17:31 rootfs.cpio.gz
+-rw-r--r-- 1 mimo3000n mimo3000n 234519806 Mar 27 17:31 rootfs.cpio.gz.u-boot
+-rw-r--r-- 1 mimo3000n mimo3000n 959204352 Mar 27 17:31 rootfs.ext4
+-rw-r--r-- 1 mimo3000n mimo3000n     70385 Mar 27 17:28 rootfs.manifest
+-rw-r--r-- 1 mimo3000n mimo3000n      1935 Mar 27 17:30 rootfs.qemuboot.conf
+-rw-r--r-- 1 mimo3000n mimo3000n   3757170 Mar 27 17:29 rootfs.spdx.tar.zst
+-rw-r--r-- 1 mimo3000n mimo3000n 236082929 Mar 27 17:31 rootfs.tar.gz
+-rw-r--r-- 1 mimo3000n mimo3000n   1741672 Mar 27 17:28 rootfs.testdata.json
+-rw-r--r-- 1 mimo3000n mimo3000n   4045676 Mar 19 13:16 system.bit
+-rw-r--r-- 1 mimo3000n mimo3000n     23978 Mar 26 13:47 system.dtb
+-rw-r--r-- 1 mimo3000n mimo3000n   1066338 Mar 27 17:25 u-boot-dtb.bin
+-rw-r--r-- 1 mimo3000n mimo3000n   1070860 Mar 27 17:25 u-boot-dtb.elf
+-rwxr-xr-x 1 mimo3000n mimo3000n   1042360 Mar 27 17:25 u-boot.bin
+-rwxr-xr-x 1 mimo3000n mimo3000n   8461216 Mar 27 17:25 u-boot.elf
+-rw-r--r-- 1 mimo3000n mimo3000n   5131896 Mar 26 13:51 uImage
+-rw-r--r-- 1 mimo3000n mimo3000n  15062008 Mar 26 13:51 vmlinux
+-rw-r--r-- 1 mimo3000n mimo3000n   5131832 Mar 26 13:51 zImage
+-rw-r--r-- 1 mimo3000n mimo3000n    413192 Mar 19 17:28 zynq_fsbl.elf
+mimo3000n@KLG-PC001:~/petalinux/2024.2/MYD-C7Z020/images/linux$
+
 cp images/linux/BOOT.BIN /media/$USER/BOOT/
 cp images/linux/image.ub /media/$USER/BOOT/
 cp images/linux/boot.scr /media/$USER/BOOT/
