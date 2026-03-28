@@ -855,4 +855,4 @@ sync
 </details>
 
 
-## [Click to expand: ] (JTAG.md "Click to expand: JTAG Setup and Configuration Giuide")
+## [Click to expand: ] (./JTAG.md "Click to expand: JTAG Setup and Configuration Giuide")
