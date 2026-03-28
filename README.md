@@ -853,3 +853,9 @@ sync
 
 ---
 </details>
+
+<details>
+<summary>Click to expand: MYIR Board U-Boot Autoboot Deactivation Guide</summary
+
+
+</details>
