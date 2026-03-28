@@ -855,4 +855,4 @@ sync
 </details>
 
 
-## (https://github.com/mimo3000n/MYD-C7Z020/blob/main/JTAG.md "Click to expand: JTAG Setup and Configuration Giuide")
+## [Click to expand: ] (JTAG.md "Click to expand: JTAG Setup and Configuration Giuide")
