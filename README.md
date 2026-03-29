@@ -28,13 +28,11 @@ This guide documents the setup and build process for the MYIR XC7Z020  V2 Develo
 [Click to expand: 🏗️ U-Boot Configuration Guide: Deactivating Autoboot](U-BOOT_CONFIG.md)
 
 ---------------------
-# System Preparation (Ubuntu 24.04/24.02)
+# 🛠 System Preparation (Ubuntu 24.04)
 --------------------
-<details>
-<summary>Click to expand: System Preparation (Ubuntu 24.04/24.02)</summary>
 
+[Click to expand: 🏗️ 🛠 System Preparation (Ubuntu 24.04)](SYSTEM_PREPARATION.md)
 
-</details>
 
 ---
 ## 🚀 JTAG Setup and Programming Guide
