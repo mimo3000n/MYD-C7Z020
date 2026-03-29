@@ -101,4 +101,3 @@ To close your session and release the JTAG cable for other tools (like Vivado):
 
 ---
 
-Would you like me to add a section on how to create a **custom configuration file** so you don't have to type the long `sudo openocd...` command every time?
