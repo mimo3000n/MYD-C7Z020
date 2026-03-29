@@ -22,10 +22,10 @@ This guide documents the setup and build process for the MYIR XC7Z020  V2 Develo
 [Click to expand: ⚙️ Setup and first boot](SETUP_FIRST_BOOT.md)
 
 -----------------
-# MYIR Board U-Boot Autoboot Deactivation Guide
+# 🏗️ U-Boot Configuration Guide: Deactivating Autoboot
 -----------------
 
-[Click to expand: (U-BOOT_CONFIG.md)
+[Click to expand: 🏗️ U-Boot Configuration Guide: Deactivating Autoboot](U-BOOT_CONFIG.md)
 
 ---------------------
 # System Preparation (Ubuntu 24.04/24.02)
