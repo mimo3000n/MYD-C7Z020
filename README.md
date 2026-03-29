@@ -862,6 +862,6 @@ sync
 ---
 # 🕹️ Controlling the Zynq-7000 PS via OpenOCD
 ---
-[Click to expand - 🕹️ Controlling the Zynq-7000 PS via OpenOCD](./OPENOCD_PS_CONTORL.md)
+[Click to expand - 🕹️ Controlling the Zynq-7000 PS via OpenOCD](OPENOCD_PS_CONTROL.md)
 
 ---
