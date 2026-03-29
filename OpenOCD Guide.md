@@ -2,7 +2,7 @@
 
 ---
 
-# OpenOCD Guide: Xilinx Zynq-7000 (Z7020) on WSL2
+# 🦮 OpenOCD Guide: Xilinx Zynq-7000 (Z7020) on WSL2
 
 This document covers the end-to-end process of connecting, verifying, and interacting with the Zynq-7000 SoC using OpenOCD and a Digilent JTAG-HS3 cable.
 
