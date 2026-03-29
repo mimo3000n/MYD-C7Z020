@@ -1,6 +1,3 @@
-This is excellent! You’ve just found the "Source of Truth" for your MYD-C7Z020 hardware mapping. This file confirms exactly how your FPGA logic is visible to the ARM processors.
-
-Based on the `cat` output you provided, here is the map of your hardware:
 
 ### 1. Your Hardware Memory Map
 | IP Name | Base Address | Size | Description |
@@ -51,4 +48,4 @@ If you want to use the **UIO (Userspace I/O)** driver instead of the "dangerous"
 ```
 By overwriting the `compatible` property to `generic-uio`, PetaLinux will create `/dev/uio0`, `/dev/uio1`, etc., making your Python hardware access much cleaner and safer.
 
-**Would you like me to show you how to modify the Python script to use `/dev/uioX` instead of `/dev/mem`?** (It’s much better because it doesn't require `sudo` once permissions are set).
+
