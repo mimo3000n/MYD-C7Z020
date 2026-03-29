@@ -48,6 +48,6 @@ This guide documents the setup and build process for the MYIR XC7Z020  V2 Develo
 
 # 🦮 OpenOCD Guide: Xilinx Zynq-7020
 
-[Click to expand - 🦮 OpenOCD Guide Xilinx Zynq-7020](OpenOCD Guide.md)
+[Click to expand - 🦮 OpenOCD Guide Xilinx Zynq-7020](OPENOCD_GUIDE.md)
 
 ---
