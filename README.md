@@ -858,3 +858,10 @@ sync
 # JTAG Setup and Configuration Giuide
 ---
 [Click to expand: JTAG Setup and Configuration Giuide ](./JTAG.md)
+
+---
+# 🕹️ Controlling the Zynq-7000 PS via OpenOCD
+---
+[Click to expand - 🕹️ Controlling the Zynq-7000 PS via OpenOCD](./OPENOCD_PS_CONTORL.md)
+
+---
