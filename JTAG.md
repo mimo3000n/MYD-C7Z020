@@ -18,8 +18,6 @@ Problem with myMYIR-bord was hat board have a 2,54mm JTAG head, cable is using 2
 
 XILINK JTAG Adapter:
 
-<img width="240" height="141" alt="image" src="https://github.com/user-attachments/assets/878f17e0-24db-441d-b84a-5486cecec5b2" />
-
 <img width="2242" height="1261" alt="image" src="https://github.com/user-attachments/assets/7bdbbb3b-9647-4028-9087-92c3fcd02839" />
 
 
