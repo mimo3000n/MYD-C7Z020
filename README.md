@@ -7,7 +7,7 @@ MYD-C7Z020 experience
 
 # PetaLinux 2024.2 Build Guide for MYIR MYD-C7Z020
 
-This guide documents the setup and build process for the MYIR XC7Z020 board. It includes specific fixes for **Ubuntu 24.x** environments and common resource-related build failures.
+This guide documents the setup and build process for the MYIR XC7Z020  V2 Development Board. It includes specific fixes for **Ubuntu 24.x** environments to compile Petalinux, change default boot, setup and use JTAG header and common resource-related petalinux build failures.
 
 ## My Environment
 
@@ -855,7 +855,6 @@ sync
 </details>
 
 ---
-
 # JTAG Setup and Configuration Giuide
-
+---
 [Click to expand: JTAG Setup and Configuration Giuide ](./JTAG.md)
