@@ -5,7 +5,7 @@ MYD-C7Z020 experience - WORK IN PROGRESS!!!
 
 
 
-# PetaLinux 2024.2 Build Guide for MYIR MYD-C7Z020, ........
+# PetaLinux 2024.2 Build Guide for MYIR MYD-C7Z020, FPGA JTAG development, FOSS, ........
 
 This guide documents the setup and build process for the MYIR XC7Z020  V2 Development Board. It includes specific fixes for **Ubuntu 24.x** environments to compile Petalinux, change default boot, setup and use JTAG header and common resource-related petalinux build failures.
 
