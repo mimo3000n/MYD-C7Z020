@@ -13,6 +13,25 @@ This document covers the advanced setup for the **Digilent JTAG-HS3** cable to p
 
 ## 1. Hardware Preparation
 
+Using JTAG header a special cable, Digilent JTAG-HS3, is needed. I bougth cable direct from Digilent shop (https://digilent.com/shop/jtag-hs3-programming-cable/?srsltid=AfmBOorAw_vPV7MDTltZSSJilcSq0mAIHtKneDEUaSDdAEX5LLj8iWoT).
+It took a week until cable addives via FedEX.
+
+<img width="1228" height="543" alt="image" src="https://github.com/user-attachments/assets/a7c2f55b-362e-4c5b-a022-71d040a51b9f" />
+
+Problem with myMYIR-bord was hat board have a 2,54mm JTAG head, cable is using 2,0mm, so i have to use an adapter to connect cable to board. From past project i have a "Waveshare XILINX JTAG Debugger", in this kit is an adapter included were i was able to link **Digilent JTAG-HS3** to my MYIR board.
+
+XILINK JTAG Adapter:
+
+<img width="240" height="141" alt="image" src="https://github.com/user-attachments/assets/878f17e0-24db-441d-b84a-5486cecec5b2" />
+
+<img width="2242" height="1261" alt="image" src="https://github.com/user-attachments/assets/7bdbbb3b-9647-4028-9087-92c3fcd02839" />
+
+
+From Adapter to MYIR board i use jumper wires, which work perfect.
+
+<img width="2242" height="1261" alt="image" src="https://github.com/user-attachments/assets/90af7c4e-aba5-48ef-bcbf-9a468301a01a" />
+
+
 ### Jumper Configuration
 To allow the JTAG cable to take control of the ARM cores, you must bypass the standard SD boot sequence.
 
