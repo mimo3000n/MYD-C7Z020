@@ -855,12 +855,12 @@ sync
 </details>
 
 ---
-# JTAG Setup and Configuration Giuide
+## 🚀 JTAG Setup and Programming Guide
 ---
-[Click to expand: JTAG Setup and Configuration Giuide ](./JTAG.md)
+[Click to expand: JTAG Setup and Configuration Giuide ](JTAG.md)
 
 ---
-# 🕹️ Controlling the Zynq-7000 PS via OpenOCD
+## 🕹️ Controlling the Zynq-7000 PS via OpenOCD
 ---
 [Click to expand - 🕹️ Controlling the Zynq-7000 PS via OpenOCD](OPENOCD_PS_CONTROL.md)
 
