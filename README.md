@@ -19,7 +19,7 @@ This guide documents the setup and build process for the MYIR XC7Z020  V2 Develo
 # ⚙️ Setup and first boot
 ---------------
 
-[Click to expand: # ⚙️ Setup and first boot](SETUP_FIRST_BOOT.md)
+[Click to expand: ⚙️ Setup and first boot](SETUP_FIRST_BOOT.md)
 
 -----------------
 # MYIR Board U-Boot Autoboot Deactivation Guide
